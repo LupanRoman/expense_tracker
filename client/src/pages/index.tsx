@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 const index = () => {
+  // !! Landing page
   return (
-    <div>index</div>
-  )
-}
+    <>
+      <div>
+        <Link href={'/Dashboard'}>Sign Up</Link>
+      </div>
+    </>
+  );
+};
 
-export default index
+export default index;
