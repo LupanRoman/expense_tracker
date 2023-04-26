@@ -2,6 +2,7 @@ import Balance from '@/components/Dashboard/Balance';
 import MonthlyExpenses from '@/components/Dashboard/MonthlyExpenses';
 import TopExpenses from '@/components/Dashboard/TopExpenses';
 import TopBar from '@/components/TopBar';
+import MainLayout from '@/components/layouts/MainLayout';
 import React from 'react';
 
 const Dashboard = () => {
@@ -9,7 +10,6 @@ const Dashboard = () => {
   return (
     <>
       <div>
-        <TopBar />
         <Balance />
         <MonthlyExpenses />
         <TopExpenses />
@@ -17,5 +17,7 @@ const Dashboard = () => {
     </>
   );
 };
+
+Dashboard.Layout = MainLayout;
 
 export default Dashboard;

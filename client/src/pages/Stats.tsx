@@ -1,9 +1,10 @@
-import React from 'react'
+import MainLayout from '@/components/layouts/MainLayout';
+import React from 'react';
 
 const Stats = () => {
-  return (
-    <div>Stats</div>
-  )
-}
+  return <div>Stats</div>;
+};
 
-export default Stats
+Stats.Layout = MainLayout;
+
+export default Stats;

@@ -1,9 +1,10 @@
-import React from 'react'
+import MainLayout from '@/components/layouts/MainLayout';
+import React from 'react';
 
 const Expenses = () => {
-  return (
-    <div>Expenses</div>
-  )
-}
+  return <div>Expenses</div>;
+};
 
-export default Expenses
+Expenses.Layout = MainLayout;
+
+export default Expenses;

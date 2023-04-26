@@ -1,9 +1,10 @@
-import React from 'react'
+import MainLayout from '@/components/layouts/MainLayout';
+import React from 'react';
 
 const Income = () => {
-  return (
-    <div>Income</div>
-  )
-}
+  return <div>Income</div>;
+};
 
-export default Income
+Income.Layout = MainLayout;
+
+export default Income;
