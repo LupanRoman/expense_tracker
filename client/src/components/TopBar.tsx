@@ -12,7 +12,7 @@ const TopBar = () => {
     <>
       <div className="flex justify-between pb-5">
         <div className="flex items-center gap-5">
-          <HiMenuAlt1 onClick={openMenu} className="text-2xl md:hidden" />
+          <HiMenuAlt1 onClick={openMenu} className="text-2xl md:hidden cursor-pointer" />
           <h1 className="text-2xl font-bold">E-Track</h1>
         </div>
         <div className="flex items-center gap-5">

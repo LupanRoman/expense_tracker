@@ -3,6 +3,8 @@ import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import { ScriptProps } from 'next/script';
 
+// ! Created the next.d.ts file to add types for nextLayout and the code bellow allows to create per page layout
+
 type Page<P = Record<string, never>> = NextPage<P> & {
   Layout: (page: ScriptProps) => JSX.Element;
 };
