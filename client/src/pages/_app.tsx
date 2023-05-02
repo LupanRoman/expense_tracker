@@ -2,6 +2,7 @@ import '@/styles/globals.css';
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import { ScriptProps } from 'next/script';
+import { StateContext } from '../../context/StateContext';
 
 // ! Created the next.d.ts file to add types for nextLayout and the code bellow allows to create per page layout
 
@@ -19,9 +20,11 @@ function App({ Component, pageProps }: Props) {
   const Layout = Component.Layout || Noop;
 
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <StateContext>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </StateContext>
   );
 }
 

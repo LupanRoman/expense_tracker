@@ -50,4 +50,8 @@
   }
 }
 
+.signUpWindow.active {
+  display: flex;
+}
+
 

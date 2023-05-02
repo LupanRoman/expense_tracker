@@ -1,8 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import SignUp from '@/components/Modals/SignUp';
+import { useStateContext } from '../../context/StateContext';
 
 const index = () => {
+  const { showSignUp } = useStateContext();
+
   // !! Landing page
   return (
     <>
@@ -10,13 +13,16 @@ const index = () => {
         <nav className="flex justify-between items-center py-10 font-bold text-lg md:text-2xl">
           <h2>E-Track</h2>
           <div className="text-xs md:text-lg flex items-center gap-4">
-            <Link href="./Dashboard">
-              <button className="bg-cta px-4 py-2 rounded-lg">Sign Up</button>
-            </Link>
+            <button
+              onClick={showSignUp}
+              className="bg-cta px-4 py-2 rounded-lg"
+            >
+              Sign Up
+            </button>
             <button className="bg-cta px-4 py-2 rounded-lg">Log In</button>
           </div>
         </nav>
-        <div>
+        <div id="signUp" className="signUpWindow hidden absolute">
           <SignUp />
         </div>
         <div className="flex flex-col gap-4 md:flex-row-reverse md:pt-10 md:items-center text-center">
