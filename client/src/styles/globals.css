@@ -42,16 +42,98 @@
 
 @media screen and (min-width: 768px) {
   .menu-component {
-      min-width: 150px;
-      max-width: 200px;
-      background-color: white;
-      position: static;
-      height: 89vh;
+    min-width: 150px;
+    max-width: 200px;
+    background-color: white;
+    position: static;
+    height: 89vh;
   }
+}
+
+.signUpModal {
+  box-shadow: 0 0 0 9999px #000000b0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .signUpWindow.active {
   display: flex;
 }
 
+.logInWindow.active {
+  display: flex;
+}
 
+/* !! STYLE FOR THE MODALS */
+
+/* ** Style for the sign up modal */
+
+.signUp-input-container input {
+  outline: none;
+  background-color: #60bc6527;
+  border-radius: 5px;
+  padding: 4px 5px 4px 5px;
+}
+
+.signUp-input-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ** Style for the sign up modal */
+
+/* ** Style for the log in modal */
+
+.logInModal {
+  box-shadow: 0 0 0 9999px #000000b0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logIn-input-container input {
+  outline: none;
+  background-color: #60bc6527;
+  border-radius: 5px;
+  padding: 4px 5px 4px 5px;
+}
+
+.logIn-input-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ** Style for the log in modal */
+
+/* ** Style for the add income modal */
+
+.incomeModal.active {
+  display: flex;
+}
+
+.addIncomeModal {
+  box-shadow: 0 0 0 9999px #000000b0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.addIncome-input-container input {
+  outline: none;
+  background-color: #60bc6527;
+  border-radius: 5px;
+  padding: 4px 5px 4px 5px;
+}
+
+.addIncome-input-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ** Style for the add income modal */
+
+/* !! STYLE FOR THE MODALS */

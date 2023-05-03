@@ -6,8 +6,10 @@ import { IoIosWater } from 'react-icons/io';
 import { GiGasStove } from 'react-icons/gi';
 import { MdOutlineElectricalServices, MdFastfood } from 'react-icons/md';
 import { GrAdd } from 'react-icons/gr';
+import { useStateContext } from '../../../context/StateContext';
 
 const IncomeType = () => {
+  const { openIncomeModal } = useStateContext();
   return (
     <>
       <div className="flex flex-col gap-5 ">
@@ -36,7 +38,7 @@ const IncomeType = () => {
           </div>
         </div>
         <div>
-          <button className="h-12 w-12 bg-cta rounded-full flex items-center justify-center absolute bottom-3 right-4 text-2xl">
+          <button onClick={openIncomeModal} className="h-12 w-12 bg-cta rounded-full flex items-center justify-center absolute bottom-3 right-4 text-2xl">
             <GrAdd />
           </button>
         </div>

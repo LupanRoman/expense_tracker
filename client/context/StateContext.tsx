@@ -12,13 +12,23 @@ export const StateContext = ({ children }: Containments) => {
     sigUpModal?.classList.toggle('active');
   };
 
+  const showLogIn = () => {
+    const logInModal = document.getElementById('logIn');
+    logInModal?.classList.toggle('active');
+  };
 
+  const openIncomeModal = () => {
+    const incomeModal = document.getElementById('incomeModal');
+    incomeModal?.classList.toggle('active');
+  };
 
   return (
     <Context.Provider
-    // TODO Need to fix the issue with the type returned from the value 
+      // TODO Need to fix the issue with the type returned from the value
       value={{
         showSignUp,
+        showLogIn,
+        openIncomeModal,
       }}
     >
       {children}
