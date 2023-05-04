@@ -38,7 +38,7 @@ const IncomeType = () => {
           </div>
         </div>
         <div>
-          <button onClick={openIncomeModal} className="h-12 w-12 bg-cta rounded-full flex items-center justify-center absolute bottom-3 right-4 text-2xl">
+          <button onClick={openIncomeModal} className="h-12 w-12 bg-cta rounded-full flex items-center justify-center absolute bottom-3 right-4 text-2xl -z-10">
             <GrAdd />
           </button>
         </div>

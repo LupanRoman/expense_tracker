@@ -6,8 +6,11 @@ import { IoIosWater } from 'react-icons/io';
 import { GiGasStove } from 'react-icons/gi';
 import { MdOutlineElectricalServices, MdFastfood } from 'react-icons/md';
 import { GrAdd } from 'react-icons/gr';
+import { useStateContext } from '../../../context/StateContext';
 
 const ExpenseType = () => {
+  const { openExpenseModal } = useStateContext();
+
   return (
     <>
       <div className="flex flex-col gap-5 ">
@@ -36,7 +39,10 @@ const ExpenseType = () => {
           </div>
         </div>
         <div>
-          <button className="h-12 w-12 bg-cta rounded-full flex items-center justify-center absolute bottom-3 right-4 text-2xl">
+          <button
+            onClick={openExpenseModal}
+            className="h-12 w-12 bg-cta rounded-full flex items-center justify-center absolute bottom-3 right-4 text-2xl -z-10"
+          >
             <GrAdd />
           </button>
         </div>

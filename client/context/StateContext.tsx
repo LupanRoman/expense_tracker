@@ -22,6 +22,11 @@ export const StateContext = ({ children }: Containments) => {
     incomeModal?.classList.toggle('active');
   };
 
+  const openExpenseModal = () => {
+    const expenseModal = document.getElementById('expenseModal');
+    expenseModal?.classList.toggle('active');
+  };
+
   return (
     <Context.Provider
       // TODO Need to fix the issue with the type returned from the value
@@ -29,6 +34,7 @@ export const StateContext = ({ children }: Containments) => {
         showSignUp,
         showLogIn,
         openIncomeModal,
+        openExpenseModal,
       }}
     >
       {children}

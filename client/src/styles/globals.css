@@ -129,11 +129,63 @@
   padding: 4px 5px 4px 5px;
 }
 
-.addIncome-input-container div {
+/* .addIncome-input-container div {
   display: flex;
   flex-direction: column;
+} */
+
+.incomeType.active {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.months.active {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 /* ** Style for the add income modal */
+
+/* ** Style for the add expense modal */
+
+.expenseModal.active {
+  display: flex;
+}
+
+.addExpenseModal {
+  box-shadow: 0 0 0 9999px #000000b0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.addExpense-input-container input {
+  outline: none;
+  background-color: #60bc6527;
+  border-radius: 5px;
+  padding: 4px 5px 4px 5px;
+}
+
+/* .addIncome-input-container div {
+  display: flex;
+  flex-direction: column;
+} */
+
+.expenseType.active {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.months.active {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* ** Style for the add expense modal */
 
 /* !! STYLE FOR THE MODALS */

@@ -7,7 +7,7 @@ const SignUp = () => {
   return (
     <>
       <div className="signUpModal flex flex-col items-center rounded-lg bg-white px-5 py-5 gap-4">
-        <h2 className='font-bold text-lg'>Sign Up</h2>
+        <h2 className="font-bold text-lg">Sign Up</h2>
         <div className="signUp-input-container flex flex-col gap-4 font-medium md:px-5 ">
           <div>
             <label htmlFor="userName">UserName</label>

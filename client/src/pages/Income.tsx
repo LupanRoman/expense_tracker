@@ -8,10 +8,10 @@ import React from 'react';
 const Income = () => {
   return (
     <>
-      <div className='relative'>
+      <div>
         <IncomeAmount />
-        <div id='incomeModal' className='incomeModal hidden'>
-        <IncomeModal />
+        <div id="incomeModal" className="incomeModal hidden">
+          <IncomeModal />
         </div>
         <IncomeGraph />
         <IncomeType />

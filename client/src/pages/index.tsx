@@ -29,7 +29,7 @@ const index = () => {
         <div id="logIn" className="logInWindow hidden">
           <LogIn />
         </div>
-        <div className="flex flex-col gap-4 md:flex-row-reverse md:pt-10 md:items-center text-center justify-center 2xl:pt-36">
+        <div className="flex flex-col gap-4 md:flex-row-reverse md:pt-10 md:items-center text-center justify-center 2xl:pt-30">
           <img
             src="/capitalization_company_4.jpg"
             alt=""
